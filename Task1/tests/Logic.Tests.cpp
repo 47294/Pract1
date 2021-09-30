@@ -2,14 +2,28 @@ extern "C"{}
 #include "../include/Logic.h"
 
 #include <gtest/gtest.h>
-int c = 0;
-for (int i = 0; i<=1;i++){
-	for (int j = 0; j<=1; j++){
-		for (int k = 0; k<=1; k++){
-			c=c+1;
-			TEST (LogicTest, c){	
-				ASSERT_DOUBLE_EQ(result(i, j, k),1);
-			}
-		}
-	}
+
+TEST (LogicTest, 000) {	
+	ASSERT_DOUBLE_EQ(result(0, 0, 0),1);
+}
+TEST (LogicTest, 001) {	
+	ASSERT_DOUBLE_EQ(result(0, 0, 1),1);
+}
+TEST (LogicTest, 010) {	
+	ASSERT_DOUBLE_EQ(result(0, 1, 0),1);
+}
+TEST (LogicTest, 011) {	
+	ASSERT_DOUBLE_EQ(result(0, 1, 1),1);
+}
+TEST (LogicTest, 100) {	
+	ASSERT_DOUBLE_EQ(result(1, 0, 0),1);
+}
+TEST (LogicTest, 101) {	
+	ASSERT_DOUBLE_EQ(result(1, 0, 1),1);
+}
+TEST (LogicTest, 110) {	
+	ASSERT_DOUBLE_EQ(result(1, 1, 0),1);
+}
+TEST (LogicTest, 111) {	
+	ASSERT_DOUBLE_EQ(result(1, 1, 1),1);
 }
