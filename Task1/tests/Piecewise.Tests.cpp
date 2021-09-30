@@ -1,13 +1,20 @@
-/* extern "C"{}
-#include "../include/Trigonometry.h"
+ extern "C"{}
+#include "../include/Piecewise.h"
 
 #include <gtest/gtest.h>
-TEST (TestNaRavenstvo, 3e20AND120e5){
-	ASSERT_DOUBLE_EQ(result(3.2, 120.5),1);
+TEST (TestOfFunc, out){
+	ASSERT_DOUBLE_EQ(f(100, 10),0);
 }
-TEST (TestNaRavenstvo, 30i60){
-	ASSERT_DOUBLE_EQ(result(30, 60),1);
+TEST (TestOfFunc, minus4){
+	ASSERT_DOUBLE_EQ(f(-4,4),-4);
 }
-TEST (TestNaRavenstvo, minus20e33333333and195e412){
-	ASSERT_DOUBLE_EQ(result(-20.3333333, 195.412),1);
-} */
+TEST (TestOfFunc, minus2e5){
+	ASSERT_DOUBLE_EQ(f(-2.5,4),4);
+}
+TEST (TestOfFunc, minus1and1e5){
+	ASSERT_DOUBLE_EQ(f(-1,4),1);
+	ASSERT_DOUBLE_EQ(f(1.5,4),2.25);
+}
+TEST (TestOfFunc, plus3){
+	ASSERT_DOUBLE_EQ(f(3,10), 5);
+}
