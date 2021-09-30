@@ -6,7 +6,7 @@
 *.ko
 *.obj
 *.elf
-
+/Task1/bin
 # Linker output
 *.ilk
 *.map
