@@ -1,15 +1,15 @@
-/* extern "C"{}
-#include "../include/Trigonometry.h"
+ extern "C"{}
+#include "../include/Inside.h"
 
 #include <gtest/gtest.h>
-TEST (TestNaRavenstvo, 3e20AND120e5){
-	ASSERT_DOUBLE_EQ(result(3.2, 120.5),1);
+TEST (CircleC, 2and2and6){
+	ASSERT_DOUBLE_EQ(inside(2, 2, 6), 1);
 }
-TEST (TestNaRavenstvo, 30i60){
-	ASSERT_DOUBLE_EQ(result(30, 60),1);
+TEST (CircleC, 3and3and6){
+	ASSERT_DOUBLE_EQ(inside(3, 3, 6), 1);
 }
-TEST (TestNaRavenstvo, minus20e33333333and195e412){
-	ASSERT_DOUBLE_EQ(result(-20.3333333, 195.412),1);
-}  */
+TEST (CircleC, minus2andminus2and9){
+	ASSERT_DOUBLE_EQ(inside(-2, -2, 9), 1);
+}
 
 
