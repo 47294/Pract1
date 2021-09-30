@@ -1,4 +1,4 @@
-extern "C"{}
+/* extern "C"{}
 #include "../include/Trigonometry.h"
 
 #include <gtest/gtest.h>
@@ -10,4 +10,6 @@ TEST (TestNaRavenstvo, 30i60){
 }
 TEST (TestNaRavenstvo, minus20e33333333and195e412){
 	ASSERT_DOUBLE_EQ(result(-20.3333333, 195.412),1);
-}
+}  */
+
+
